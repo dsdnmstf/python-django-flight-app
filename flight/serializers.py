@@ -24,7 +24,7 @@ class PassengerSerializer(serializers.ModelSerializer):
             "id",
             "first_name",
             "last_name",
-            "phone_number"
+            "phone_number",
         )
 class ReservationSerializer(serializers.ModelSerializer):
     passenger = PassengerSerializer()
